@@ -1,0 +1,153 @@
+---
+title: "Gapminder 2007"
+format: dashboard
+theme: superhero
+---
+
+```{python}
+import plotly.express as px
+p= px.line(y=[1,2,3])
+
+```
+
+# Page 1 - Layouts
+
+## Row {height='30%'}
+
+### Column {width='33.3%'}
+
+```{python}
+p
+```
+
+### Column {width='33.3%'}
+
+```{python}
+p
+```
+
+### Column {width='33.3%'}
+
+```{python}
+p
+```
+
+
+## Row {height='70%'}
+
+### Column {width='70%'}
+
+```{python}
+p
+```
+
+### Column {width='30%'}
+
+```{python}
+p
+```
+
+
+# Page 2 - TabSets
+
+## Row {height='30%'}
+
+### Column {.tabset width='33.3%'}
+
+#### Tab 1
+
+```{python}
+p
+```
+
+#### Tab 2
+Hello World
+
+### Column {width='33.3%'}
+
+```{python}
+p
+```
+
+### Column {width='33.3%'}
+
+```{python}
+p
+```
+
+
+## Row {.tabset height='70%'}
+
+### Tab 1 
+```{python}
+p
+```
+
+### Tab 2 
+Hello World
+
+# Page 3 - Practice
+
+## 3R1 {height='20%'}
+
+### 3R1C1 
+
+```{python}
+p
+```
+
+### 3R1C2 
+
+```{python}
+p
+```
+
+## 3R2 {height='80%'}
+
+### 3R2C1 {width='70%'}
+
+```{python}
+p
+```
+
+### 3R2C2 {.tabset width='30%'}
+
+#### 3R2C2 Tab1
+
+```{python}
+p
+```
+
+#### 3R2C2 Tab2
+Hello World on Tab2
+
+# Pg4 - Value Boxes
+
+```{python}
+tips = px.data.tips()
+num_cols = tips.shape[1]
+num_rows = tips.shape[0]
+```
+
+## {height='20%'}
+
+::: {.valuebox title="Columns" color="primary" icon="heart"}
+`{python} num_cols`
+
+Few columns
+:::
+
+::: {.valuebox title="Rows" color="light" icon="arrow-down"}
+`{python} num_rows`
+
+Many rows
+:::
+
+::: {.valuebox title="SmallNumber" color="secondary" icon="bar-chart" }
+1
+:::
+
+##
+```{python}
+p
+```
